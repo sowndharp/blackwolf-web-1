@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles | Blackwolf BMW</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/vehicles.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="/">BLACKWOLF <span>BMW</span></a>
+        <nav><a class="active" href="/vehicles.html">Vehicles</a><a href="/pages/services.html">Services</a><a
+                href="/pages/about.html">About</a><a href="/login.html">Account</a></nav><a class="btn btn-primary"
+            href="/enquiry.html">Enquire</a>
+    </header>
+    <main class="vehicles-page">
+        <section class="collection-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">BLACKWOLF MOTORS / COLLECTION</p>
+                <h1>Engineered<br>for the <em>extraordinary.</em></h1>
+                <p>Explore a curated collection of performance, luxury and precision engineered automobiles.</p>
+            </div>
+            <div class="hero-counter"><strong id="heroVehicleCount">06</strong><span>VEHICLES</span></div>
+            <div class="hero-orbit" aria-hidden="true"><span class="orbit-ring"></span><span
+                    class="orbit-glow"></span><span class="orbit-mark">BW</span></div>
+        </section>
+
+        <section class="collection-section" aria-labelledby="collection-title">
+            <div class="collection-toolbar">
+                <div class="search-wrap"><label for="vehicleSearch">Search vehicles</label><input id="vehicleSearch"
+                        type="search" placeholder="Search vehicles..." autocomplete="off">
+                </div>
+                <div class="filter-wrap"><span class="filter-label">Filter by type</span>
+                    <div id="categoryFilters" class="category-filters" role="group" aria-label="Vehicle categories">
+                        <button class="filter-button active" type="button" data-category="All">All</button><button
+                            class="filter-button" type="button" data-category="Sedan">Sedan</button><button
+                            class="filter-button" type="button" data-category="SUV">SUV</button><button
+                            class="filter-button" type="button" data-category="M Performance">M Performance</button>
+                    </div>
+                </div>
+            </div>
+            <div class="results-heading">
+                <h2 id="collection-title">The collection</h2><span id="vehicleCount" class="vehicle-count"
+                    aria-live="polite">Loading...</span>
+            </div>
+            <div id="vehicleGrid" class="vehicle-grid" aria-live="polite">
+                <p class="loading">Loading collection...</p>
+            </div>
+            <div id="emptyState" class="empty-state" hidden>
+                <p class="eyebrow">NO MATCHES</p>
+                <h2>No vehicles found</h2>
+                <p>Try a different search or clear the selected filters.</p><button id="resetFilters"
+                    class="btn btn-primary" type="button">Reset filters</button>
+            </div>
+            <div id="errorState" class="empty-state" hidden>
+                <p class="eyebrow">COLLECTION UNAVAILABLE</p>
+                <h2>We couldn't load the vehicles.</h2>
+                <p>Please refresh the page and try again.</p><button id="retryVehicles" class="btn btn-primary"
+                    type="button">Try again</button>
+            </div>
+        </section>
+
+        <section class="collection-cta">
+            <div>
+                <p class="eyebrow">PRIVATE CONSULTATION</p>
+                <h2>Your next<br><em>drive starts here.</em></h2>
+                <p>Speak with a Blackwolf Motors specialist and discover the vehicle built for you.</p>
+            </div><a class="btn btn-primary" href="/enquiry.html">Book a private consultation <span
+                    aria-hidden="true">→</span></a>
+        </section>
+    </main>
+    <footer class="site-footer"><strong>BLACKWOLF BMW</strong><span>Drive something remarkable.</span><a
+            href="/pages/contact.html">Contact showroom</a></footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/vehicles.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login | Blackwolf Motors</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-layout"><a class="auth-brand brand" href="/">BLACKWOLF <span>MOTORS</span></a>
+        <div class="auth-aside">
+            <p class="eyebrow">BLACKWOLF MOTORS</p>
+            <h1>Drive with<br><em>intent.</em></h1>
+            <p>A private space for your Blackwolf Motors journey.</p>
+        </div>
+        <section class="auth-card"><a class="back-link" href="/">← Back to showroom</a>
+            <p class="eyebrow">CLIENT ACCESS</p>
+            <h2>Welcome back.</h2>
+            <p class="muted">Sign in to continue to your dashboard.</p>
+            <form id="loginForm"><label for="email">Email address</label><input id="email" type="email"
+                    placeholder="you@example.com" autocomplete="email" required><label for="password">Password</label>
+                <div class="password-field"><input id="password" type="password" placeholder="Enter your password"
+                        autocomplete="current-password" required><button id="loginPasswordToggle"
+                        class="password-toggle" type="button" aria-label="Show password"
+                        aria-pressed="false">Show</button></div><button class="btn btn-primary full" type="submit">Sign
+                    in <span aria-hidden="true">→</span></button>
+                <div id="message" class="message" aria-live="polite"></div>
+            </form>
+            <div class="demo"><span>Demo access</span><strong>admin@example.com</strong><small>Admin@123</small></div>
+            <p class="switch">New to Blackwolf? <a href="/register.html">Create an account</a></p>
+        </section>
+    </main>
+    <script src="/js/auth.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

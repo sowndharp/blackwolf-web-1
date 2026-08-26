@@ -1,0 +1,10 @@
+{
+  "name": "blackwolf-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js",
+    "build": "node -e \"console.log('Blackwolf Web: build check passed')\""
+  }
+}

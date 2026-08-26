@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Blackwolf Motors</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body class="dashboard-page">
+    <aside class="sidebar"><a class="brand" href="/">BLACKWOLF <span>MOTORS</span></a>
+        <p class="sidebar-label">CLIENT SPACE</p>
+        <nav class="side-menu" aria-label="Dashboard navigation"><a class="active" href="/dashboard.html">Overview</a><a
+                href="/vehicles.html">Collection</a><a href="/enquiry.html">Consultation</a></nav><button id="logoutBtn"
+            class="logout" type="button">Sign out <span aria-hidden="true">→</span></button>
+    </aside>
+    <main class="dashboard">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">CLIENT SPACE / OVERVIEW</p>
+                <h1>Your dashboard.</h1>
+            </div>
+            <div class="profile">
+                <div id="avatar" class="avatar">B</div>
+                <div><strong id="userName">Loading...</strong><small id="userEmail">...</small></div>
+            </div>
+        </header>
+        <section class="welcome">
+            <p class="eyebrow">WELCOME BACK</p>
+            <h2>Hello, <span id="welcomeName">Client</span>.</h2>
+            <p>Everything is ready for your next Blackwolf Motors experience.</p>
+        </section>
+        <section class="stats">
+            <article class="stat-card"><small>REGISTERED CLIENTS</small><strong id="userCount">—</strong><span>Live
+                    showroom data</span></article>
+            <article class="stat-card"><small>SERVER</small><strong>ONLINE</strong><span>Node.js + Express</span>
+            </article>
+            <article class="stat-card"><small>DATABASE</small><strong>SQLITE</strong><span>Connected locally</span>
+            </article>
+            <article class="stat-card"><small>AUTHENTICATION</small><strong>JWT</strong><span>Protected access</span>
+            </article>
+        </section>
+        <section class="panel">
+            <div>
+                <p class="eyebrow">SYSTEM STATUS</p>
+                <h3>Showroom connection</h3>
+                <p class="muted">Your client space is connected to the Blackwolf Motors platform.</p>
+            </div>
+            <div id="apiStatus" class="status">Checking...</div>
+        </section>
+    </main>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
