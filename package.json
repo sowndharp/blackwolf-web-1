@@ -6,5 +6,8 @@
     "start": "node backend/server.js",
     "dev": "node backend/server.js",
     "build": "node -e \"console.log('Blackwolf Web: build check passed')\""
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }
